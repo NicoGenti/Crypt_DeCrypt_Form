@@ -33,6 +33,7 @@ namespace CryptDecrypt.UI
             this.btn_MD5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_Aes = new System.Windows.Forms.Button();
+            this.btn_Pgp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,14 +45,30 @@ namespace CryptDecrypt.UI
             this.label1.Size = new System.Drawing.Size(308, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Welcome to Crypt && DeCrypt";
-            // 
+            //
+            // btn_Pgp
+            //
+            this.btn_Pgp.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Pgp.Location = new System.Drawing.Point(104, 229);
+            this.btn_Pgp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Pgp.MaximumSize = new System.Drawing.Size(365, 55);
+            this.btn_Pgp.MinimumSize = new System.Drawing.Size(365, 55);
+            this.btn_Pgp.Name = "btn_Pgp";
+            this.btn_Pgp.Size = new System.Drawing.Size(365, 55);
+            this.btn_Pgp.TabIndex = 5;
+            this.btn_Pgp.Text = "PGP";
+            this.btn_Pgp.UseVisualStyleBackColor = true;
+            this.btn_Pgp.Click += new System.EventHandler(this.btn_Pgp_Click);
+            //
             // btn_MD5
-            // 
-            this.btn_MD5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            //
+            this.btn_MD5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_MD5.Enabled = false;
-            this.btn_MD5.Location = new System.Drawing.Point(104, 269);
+            this.btn_MD5.Location = new System.Drawing.Point(104, 294);
             this.btn_MD5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_MD5.MaximumSize = new System.Drawing.Size(365, 55);
             this.btn_MD5.MinimumSize = new System.Drawing.Size(365, 55);
@@ -99,6 +116,7 @@ namespace CryptDecrypt.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 481);
             this.Controls.Add(this.btn_Aes);
+            this.Controls.Add(this.btn_Pgp);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_MD5);
             this.Controls.Add(this.label1);
@@ -122,5 +140,6 @@ namespace CryptDecrypt.UI
         private System.Windows.Forms.Button btn_MD5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_Aes;
+        private System.Windows.Forms.Button btn_Pgp;
     }
 }
