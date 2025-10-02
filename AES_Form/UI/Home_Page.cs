@@ -35,5 +35,13 @@ namespace CryptDecrypt.UI
         }
         #endregion
 
+        #region PGP BUTTON
+        private void btn_Pgp_Click(object sender, EventArgs e)
+        {
+            Pgp_Form pgp_Form = new Pgp_Form();
+            pgp_Form.ShowDialog();
+        }
+        #endregion
+
     }
 }
